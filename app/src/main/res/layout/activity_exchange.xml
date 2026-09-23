@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    tools:context=".ExchangeActivity">
+
+    <!-- タイトル -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ポイント交換"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:includeFontPadding="false" />
+
+    <!-- 現在ポイント表示 -->
+    <TextView
+        android:id="@+id/currentPointsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="現在のポイント："
+        android:textSize="20sp"
+        android:includeFontPadding="false"/>
+    <!--現在のポイントが、textで1000固定だから変数で変える。-->
+    <TextView
+        android:id="@+id/currentPointsValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000 pt"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:layout_marginBottom="20dp"
+        android:includeFontPadding="false" />
+
+    <!-- スクロール対応 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/exchangeList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 交換アイテム① -->
+            <LinearLayout
+                android:id="@+id/itemLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/itemImage1"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/icon1"
+                    android:contentDescription="交換アイテム画像"
+                    android:layout_marginEnd="16dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/itemName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="交換アイテム1"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:includeFontPadding="false" />
+
+                    <TextView
+                        android:id="@+id/itemCost1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="必要ポイント：500pt"
+                        android:textSize="14sp"
+                        android:layout_marginTop="4dp"
+                        android:includeFontPadding="false" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/exchangeBtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交換"
+                    android:background="@color/teal_700"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@null" />
+            </LinearLayout>
+
+            <!-- 交換アイテム② -->
+            <LinearLayout
+                android:id="@+id/itemLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/itemImage2"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/icon3"
+                    android:contentDescription="交換アイテム画像"
+                    android:layout_marginEnd="16dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/itemName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="交換アイテム2"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:includeFontPadding="false" />
+
+                    <TextView
+                        android:id="@+id/itemCost2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="必要ポイント：800pt"
+                        android:textSize="14sp"
+                        android:layout_marginTop="4dp"
+                        android:includeFontPadding="false" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/exchangeBtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交換"
+                    android:background="@color/teal_700"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@null" />
+            </LinearLayout>
+
+            <!-- 交換アイテム③ -->
+            <LinearLayout
+                android:id="@+id/itemLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/itemImage3"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/icon2"
+                    android:contentDescription="交換アイテム画像"
+                    android:layout_marginEnd="16dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/itemName3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="交換アイテム3"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:includeFontPadding="false" />
+
+                    <TextView
+                        android:id="@+id/itemCost3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="必要ポイント：1000pt"
+                        android:textSize="14sp"
+                        android:layout_marginTop="4dp"
+                        android:includeFontPadding="false" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/exchangeBtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交換"
+                    android:background="@color/teal_700"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 戻るボタン -->
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="戻る"
+        android:background="@color/teal_700"
+        android:textColor="@color/white"
+        app:backgroundTint="@null"
+        android:layout_marginTop="20dp"
+        android:includeFontPadding="false" />
+
+</LinearLayout>

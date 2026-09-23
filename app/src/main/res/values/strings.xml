@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">InfoTest</string>
+
+    <!-- UnitActivityでの単元表示用 -->
+    <string name="category_security">セキュリティ</string>
+    <string name="category_digiman">デジタルマナー</string>
+    <string name="category_howquiz">電子機器の使い方</string>
+
+
+    <!-- 結果表示用 -->
+    <string name="result_score">正解数: %1$d</string>
+    <string name="result_total_score">累計スコア: %1$d</string>
+    <string name="result_title">結果</string>
+    <string name="btn_return">戻る</string>
+
+
+    <!-- 出題用 -->
+    <string name="count_label">第 %1$d 問</string>
+    <string name="question_label">問題文</string>
+    <string name="_1_5">1/5</string>
+
+    <!--プロフィール表示用-->
+    <string name="result_total_score_security">セキュリティの点数</string>
+    <string name="result_total_score_digiman">デジタルマナーの点数</string>
+    <string name="result_total_score_howquiz">電子機器の使い方の点数</string>
+
+
+</resources>

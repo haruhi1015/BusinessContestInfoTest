@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".HomeActivity">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"/>
+
+    <!-- アイコンボタン -->
+    <ImageButton
+        android:id="@+id/userIcon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/icon1"
+        android:scaleType="centerCrop"
+        android:background="@color/white"
+        android:contentDescription="ユーザーアイコン"
+        android:layout_marginEnd="12dp"/>
+
+    <!-- 🔽 リスト表示用（最初は非表示になる） -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:layout_marginTop="8dp" />
+    
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+    <!-- 🔽 各科目のボタン -->
+    <Button
+        android:id="@+id/security"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="セキュリティ"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/digiman"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="デジタルマナー"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/howquiz"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="電子機器の使い方"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_marginTop="8dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
+
+</LinearLayout>

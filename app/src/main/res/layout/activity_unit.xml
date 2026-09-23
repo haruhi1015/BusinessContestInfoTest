@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UnitActivity">
+
+
+    <Button
+        android:id="@+id/returnBtn"
+        android:layout_width="40pt"
+        android:layout_height="wrap_content"
+        android:text="戻る"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/unitTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="選択している単元"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/videoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/teal_500"
+        android:text="解説動画をみる"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/quizBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="問題にチャレンジ"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/teal_200"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp" />
+
+
+
+
+</LinearLayout>
